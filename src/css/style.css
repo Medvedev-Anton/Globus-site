@@ -1,0 +1,23 @@
+.carousel-indicators > button {
+    border-radius: 50%;
+    width: 8px !important;
+    height: 8px !important;
+}
+.carousel-inner img {
+    width: 100%; /* Ширина 100% от родительского контейнера */
+    height: 480px; /* Фиксированная высота */
+    object-fit: cover; /* Заполнение контейнера без искажения пропорций */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон под текстом */
+}
+.carousel-item {
+    position: relative; /* Устанавливаем позицию для родительского элемента */
+}
+
+.image {
+	background: #000;
+    border-radius: 12px;
+}
+.image img {
+	opacity: 0.8;
+}
+
