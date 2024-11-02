@@ -12,33 +12,34 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header class="text-black p-3">
-        <div class="container d-flex justify-content-between align-items-center border-bottom" style="height: 65px; width: 100%;">
-            <h1 class="h4"><img src="../assets/logo.svg" alt="logo" style="height: 16px; width: 16px; margin-right: 16px;">Глобус</h1>
-            <nav>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#question">
-                    О нас
-                </button>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#question">
-                    Контакты
-                </button>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#question">
-                    Путешествия
-                </button>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#question">
-                    Полёты
-                </button>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#question">
-                    Отели
-                </button>
-            </nav>
-            
-            <img src="../assets/images/example-avatars/avatar-man1.png" class="rounded-circle justify-content-end" style="width: 40px; height: 40px;" alt="Avatar" />
+    <header class="text-black p-3 border-bottom" style="height: 65px; width: 100%;">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+            <!-- Логотип слева -->
+            <h1 class="h4 d-flex align-items-center m-0">
+                <img src="../assets/logo.svg" alt="logo" style="height: 16px; width: 16px; margin-right: 8px;">
+                Глобус
+            </h1>
+    
+            <!-- Контейнер справа для навигации и аватара -->
+            <div class="d-flex align-items-center gap-3">
+                <nav class="d-flex gap-3">
+                    <a href="#about" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">О нас</a>
+                    <a href="#contacts" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Контакты</a>
+                    <a href="#travels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Путешествия</a>
+                    <a href="#flights" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Полёты</a>
+                    <a href="#hotels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Отели</a>
+                </nav>
+                
+                <!-- Аватар пользователя -->
+                <img src="../assets/images/example-avatars/avatar-man1.png" class="rounded-circle" style="width: 40px; height: 40px; margin-left: 55px;" alt="Avatar" />
+            </div>
         </div>
     </header>
+    
+    
 
     <main>
-        <div id="carouselExampleCaptions" class="carousel slide" style="width: 928px; height: 480px; margin-left: auto; margin-right: auto;" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" style="width: 928px; height: 480px; margin-left: auto; margin-right: auto; margin-top: 40px" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -50,26 +51,73 @@
                     <img src="../assets/images/carousel-images/carousel-image1.jpg" class="d-block w-100" alt="" style="border-radius: 12px;">
                     <div class="carousel-caption d-none d-md-block">
                         <p style="font-size: 48px;"><b>Приветствуем вас в Глобус</b></p>
-                        <p style="font-size: 16px;">Мы - туристическая компания, которая поможет вам спланировать и забронировать ваше следующее путешествие.</p>
+                        <p style="font-size: 16px;">Мы - туристическая компания, которая поможет вам спланировать и забронировать ваше следующее путешествие. Путешествуете ли вы по делам или для удовольствия, мы позаботимся о вас.</p>
                     </div>
                 </div>
 
                 <div class='carousel-item image'>
                     <img src='../assets/images/carousel-images/carousel-image2.png' class='d-block w-100' alt='' style='border-radius: 12px;'>
                     <div class='carousel-caption d-none d-md-block'>
-                        <p style='font-size: 48px;'><b>Приветствуем вас в Глобус</b></p>
-                        <p style='font-size: 16px;'>Мы - туристическая компания, которая поможет вам спланировать и забронировать ваше следующее путешествие.</p>
+                        <p style='font-size: 48px;'><b>Откройте мир с нами</b></p>
+                        <p style='font-size: 16px;'>Исследуйте новые горизонты! Мы подберем для вас уникальные направления и создадим путешествие, которое идеально подойдёт именно вам.</p>
                     </div>
                 </div>
 
                 <div class='carousel-item image'>
                     <img src='../assets/images/carousel-images/carousel-image3.png' class='d-block w-100' alt='' style='border-radius: 12px;'>
                     <div class='carousel-caption d-none d-md-block'>
-                        <p style='font-size: 48px;'><b>Приветствуем вас в Глобус</b></p>
-                        <p style='font-size: 16px;'>Мы - туристическая компания, которая поможет вам спланировать и забронировать ваше следующее путешествие.</p>
+                        <p style='font-size: 48px;'><b>Мы всегда рядом</b></p>
+                        <p style='font-size: 16px;'>Наша команда обеспечит поддержку на каждом этапе вашего путешествия, от планирования до возвращения домой. Надёжно, удобно и безопасно.</p>
                     </div>
                 </div>
             </div>
+            <section class="py-5">
+                <div class="container text-start">
+                    <h2 class="mb-4">Что вы ищете?</h2>
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <!-- Первая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/airplane.svg" alt="Иконка полётов" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Полёты</p>
+                                    <p class="card-text fs-6" >Бронируйте авиабилеты в любую точку мира по выгодным ценам.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вторая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/house.svg" alt="Иконка отелей" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Отели</p>
+                                    <p class="card-text fs-6">Найдите идеальное место для проживания во время вашей поездки.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Третья карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/car.svg" alt="Иконка автомобилей" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Аренда автомобилей</p>
+                                    <p class="card-text fs-6">Арендуйте авто для вашего путешествия у лучших компаний по прокату.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Четвертая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/case.svg" alt="Иконка путёвок" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Путевки на отдых</p>
+                                    <p class="card-text fs-6">Экономьте время и деньги, бронируя перелет и отель вместе.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 </body>
