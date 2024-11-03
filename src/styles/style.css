@@ -21,3 +21,30 @@
 	opacity: 0.8;
 }
 
+/* Уменьшаем отступы внутри карточки */
+.card-body {
+    padding: 0.5rem 1rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0.25rem 0;
+    white-space: nowrap; /* Не переносить текст */
+    overflow: hidden; /* Скрыть выходящий за границу текст */
+    text-overflow: ellipsis; /* Добавить многоточие */
+}
+
+/* Цена */
+.card-price {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    color: var(--highlight-color);
+    /* Убираем font-weight для использования тега <b> в HTML */
+}
+
+/* Текст описания */
+.card-text {
+    margin: 0.5rem 0 0;
+    color: var(--description-text);
+}
+

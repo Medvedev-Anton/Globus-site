@@ -38,8 +38,8 @@
     
     
 
-    <main>
-        <div id="carouselExampleCaptions" class="carousel slide" style="width: 928px; height: 480px; margin-left: auto; margin-right: auto; margin-top: 40px" data-bs-ride="carousel">
+    <main style="width: 928px; height: 480px; margin-left: auto; margin-right: auto;">
+        <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 40px" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -71,54 +71,98 @@
                     </div>
                 </div>
             </div>
-            <section class="py-5">
-                <div class="container text-start">
-                    <h2 class="mb-4">Что вы ищете?</h2>
-                    <div class="row row-cols-1 row-cols-md-4 g-4">
-                        <!-- Первая карточка -->
-                        <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
-                                <div class="card-body text-start">
-                                    <img src="../assets/icons/airplane.svg" alt="Иконка полётов" style="width: 24px; height: 24px;" class="mb-3">
-                                    <p class="card-title fw-bold fs-6">Полёты</p>
-                                    <p class="card-text fs-6" >Бронируйте авиабилеты в любую точку мира по выгодным ценам.</p>
-                                </div>
+        </div>
+        <section class="py-5">
+            <div class="container text-start">
+                <h2 class="mb-4">Что вы ищете?</h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <!-- Первая карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-1 shadow-sm">
+                            <div class="card-body text-start">
+                                <img src="../assets/icons/airplane.svg" alt="Иконка полётов" style="width: 24px; height: 24px;" class="mb-3">
+                                <p class="card-title fw-bold fs-6">Полёты</p>
+                                <p class="card-text fs-6" >Бронируйте авиабилеты в любую точку мира по выгодным ценам.</p>
                             </div>
                         </div>
-                        <!-- Вторая карточка -->
-                        <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
-                                <div class="card-body text-start">
-                                    <img src="../assets/icons/house.svg" alt="Иконка отелей" style="width: 24px; height: 24px;" class="mb-3">
-                                    <p class="card-title fw-bold fs-6">Отели</p>
-                                    <p class="card-text fs-6">Найдите идеальное место для проживания во время вашей поездки.</p>
-                                </div>
+                    </div>
+                    <!-- Вторая карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-1 shadow-sm">
+                            <div class="card-body text-start">
+                                <img src="../assets/icons/house.svg" alt="Иконка отелей" style="width: 24px; height: 24px;" class="mb-3">
+                                <p class="card-title fw-bold fs-6">Отели</p>
+                                <p class="card-text fs-6">Найдите идеальное место для проживания во время вашей поездки.</p>
                             </div>
                         </div>
-                        <!-- Третья карточка -->
-                        <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
-                                <div class="card-body text-start">
-                                    <img src="../assets/icons/car.svg" alt="Иконка автомобилей" style="width: 24px; height: 24px;" class="mb-3">
-                                    <p class="card-title fw-bold fs-6">Аренда автомобилей</p>
-                                    <p class="card-text fs-6">Арендуйте авто для вашего путешествия у лучших компаний по прокату.</p>
-                                </div>
+                    </div>
+                    <!-- Третья карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-1 shadow-sm">
+                            <div class="card-body text-start">
+                                <img src="../assets/icons/car.svg" alt="Иконка автомобилей" style="width: 24px; height: 24px;" class="mb-3">
+                                <p class="card-title fw-bold fs-6">Аренда автомобилей</p>
+                                <p class="card-text fs-6">Арендуйте авто для вашего путешествия у лучших компаний по прокату.</p>
                             </div>
                         </div>
-                        <!-- Четвертая карточка -->
-                        <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
-                                <div class="card-body text-start">
-                                    <img src="../assets/icons/case.svg" alt="Иконка путёвок" style="width: 24px; height: 24px;" class="mb-3">
-                                    <p class="card-title fw-bold fs-6">Путевки на отдых</p>
-                                    <p class="card-text fs-6">Экономьте время и деньги, бронируя перелет и отель вместе.</p>
-                                </div>
+                    </div>
+                    <!-- Четвертая карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-1 shadow-sm">
+                            <div class="card-body text-start">
+                                <img src="../assets/icons/case.svg" alt="Иконка путёвок" style="width: 24px; height: 24px;" class="mb-3">
+                                <p class="card-title fw-bold fs-6">Путевки на отдых</p>
+                                <p class="card-text fs-6">Экономьте время и деньги, бронируя перелет и отель вместе.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container text-start">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Первая карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="../assets/images/service-images/Cambodia-Kampot.jpg" class="card-img-top rounded-3" alt="Кампот, Камбоджа">
+                            <div class="card-body">
+                                <p class="card-title"><b>Посетите Кампот, Камбоджа</b></p>
+                                <p class="card-price"><b>500.000р/2 недели</b></p>
+                                <p class="card-text">Кампот является базой для посещения Слоновьих гор и Национального парка Бокор. Вокруг города много водопадов.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Вторая карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="../assets/images/service-images/Cuba-Havana.jpg" class="card-img-top rounded-3" alt="Гавана, Куба">
+                            <div class="card-body">
+                                <p class="card-title"><b>Насладитесь г.Гавана на Кубе</b></p>
+                                <p class="card-price"><b>250.000р/2 недели</b></p>
+                                <p class="card-text">Куба привлекает путешественников своими богатыми природными рекреационными ресурсами — разнообразием ландшафта, земных и водных экосистем.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Третья карточка -->
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="../assets/images/service-images/Mexico-Mexico.jpg" class="card-img-top rounded-3" alt="Мехико, Мексика">
+                            <div class="card-body">
+                                <p class="card-title"><b>Изучите г.Мехико в Мексике</b></p>
+                                <p class="card-price"><b>50.000р/1 неделя</b></p>
+                                <p class="card-text">Столица страны — город Мехико — служит отправной точкой для посещения древнего индейского города Теотиуакан, известного своими культовыми сооружениями — пирамидой Солнца и пирамидой Луны.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
     </main>
 </body>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
