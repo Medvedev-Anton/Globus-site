@@ -65,3 +65,109 @@ h5 {
 textarea.form-control {
     height: 120px; /* Примерная высота, можно отрегулировать */
 }
+
+/* Карточки отзывов с фиксированной высотой */
+#testimonialCarousel .card {
+    width: 100%;
+    height: 340px; /* Увеличим высоту для большего пространства текста */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Аватар */
+#testimonialCarousel .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Увеличенная область текста отзыва */
+#testimonialCarousel .review-text {
+    height: 80px; /* Увеличим высоту для видимости текста */
+    font-size: 1rem; /* Увеличим размер текста */
+    color: #333; /* Более темный цвет для лучшей читаемости */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Имя */
+#testimonialCarousel .card .fw-bold {
+    height: 24px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Дата */
+#testimonialCarousel .card .text-muted {
+    height: 20px;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Позиционируем стрелки управления в верхних углах */
+.carousel-control-prev,
+.carousel-control-next {
+    top: 10px; /* Устанавливаем стрелки в верхней части */
+    width: 30px; /* Делаем стрелки немного меньше */
+    height: 30px;
+}
+
+/* Убираем стандартный фон Bootstrap */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Убираем стандартное изображение */
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+/* Стиль стрелки для кнопки "prev" */
+.carousel-control-prev-icon::before,
+.carousel-control-prev-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 12px;
+    height: 2px;
+}
+
+/* Верхняя и нижняя линии для стрелки "prev" */
+.carousel-control-prev-icon::before {
+    transform: rotate(45deg);
+    top: 50%;
+    left: 0;
+    transform-origin: left;
+}
+
+.carousel-control-prev-icon::after {
+    transform: rotate(-45deg);
+    top: 50%;
+    left: 0;
+    transform-origin: left;
+}
+
+/* Стиль стрелки для кнопки "next" */
+.carousel-control-next-icon::before,
+.carousel-control-next-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 12px;
+    height: 2px;
+}
+
+/* Верхняя и нижняя линии для стрелки "next" */
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg);
+    top: 50%;
+    right: 0;
+}
+
