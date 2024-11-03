@@ -12,319 +12,349 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header class="text-black p-3 border-bottom" style="height: 65px; width: 100%;">
-        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
-            <!-- Логотип слева -->
-            <h1 class="h4 d-flex align-items-center m-0">
-                <img src="../assets/logo.svg" alt="logo" style="height: 16px; width: 16px; margin-right: 8px;">
-                Глобус
-            </h1>
-    
-            <!-- Контейнер справа для навигации и аватара -->
-            <div class="d-flex align-items-center gap-3">
-                <nav class="d-flex gap-3">
-                    <a href="#about" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">О нас</a>
-                    <a href="#contacts" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Контакты</a>
-                    <a href="#travels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Путешествия</a>
-                    <a href="#flights" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Полёты</a>
-                    <a href="#hotels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Отели</a>
-                </nav>
-                
-                <!-- Аватар пользователя -->
-                <img src="../assets/images/example-avatars/avatar-man1.png" class="rounded-circle" style="width: 40px; height: 40px; margin-left: 55px;" alt="Avatar" />
-            </div>
-        </div>
-    </header>
-    
-    
-
-    <main style="width: 928px; height: 480px; margin-left: auto; margin-right: auto;">
-        <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 40px" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active image">
-                    <img src="../assets/images/carousel-images/carousel-image1.jpg" class="d-block w-100" alt="" style="border-radius: 12px;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p style="font-size: 48px;"><b>Приветствуем вас в Глобус</b></p>
-                        <p style="font-size: 16px;">Мы - туристическая компания, которая поможет вам спланировать и забронировать ваше следующее путешествие. Путешествуете ли вы по делам или для удовольствия, мы позаботимся о вас.</p>
-                    </div>
-                </div>
-
-                <div class='carousel-item image'>
-                    <img src='../assets/images/carousel-images/carousel-image2.png' class='d-block w-100' alt='' style='border-radius: 12px;'>
-                    <div class='carousel-caption d-none d-md-block'>
-                        <p style='font-size: 48px;'><b>Откройте мир с нами</b></p>
-                        <p style='font-size: 16px;'>Исследуйте новые горизонты! Мы подберем для вас уникальные направления и создадим путешествие, которое идеально подойдёт именно вам.</p>
-                    </div>
-                </div>
-
-                <div class='carousel-item image'>
-                    <img src='../assets/images/carousel-images/carousel-image3.png' class='d-block w-100' alt='' style='border-radius: 12px;'>
-                    <div class='carousel-caption d-none d-md-block'>
-                        <p style='font-size: 48px;'><b>Мы всегда рядом</b></p>
-                        <p style='font-size: 16px;'>Наша команда обеспечит поддержку на каждом этапе вашего путешествия, от планирования до возвращения домой. Надёжно, удобно и безопасно.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="py-5">
-            <div class="container text-start">
-                <h2 class="mb-4">Что вы ищете?</h2>
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <!-- Первая карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-1 shadow-sm">
-                            <div class="card-body text-start">
-                                <img src="../assets/icons/airplane.svg" alt="Иконка полётов" style="width: 24px; height: 24px;" class="mb-3">
-                                <p class="card-title fw-bold fs-6">Полёты</p>
-                                <p class="card-text fs-6" >Бронируйте авиабилеты в любую точку мира по выгодным ценам.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Вторая карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-1 shadow-sm">
-                            <div class="card-body text-start">
-                                <img src="../assets/icons/house.svg" alt="Иконка отелей" style="width: 24px; height: 24px;" class="mb-3">
-                                <p class="card-title fw-bold fs-6">Отели</p>
-                                <p class="card-text fs-6">Найдите идеальное место для проживания во время вашей поездки.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Третья карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-1 shadow-sm">
-                            <div class="card-body text-start">
-                                <img src="../assets/icons/car.svg" alt="Иконка автомобилей" style="width: 24px; height: 24px;" class="mb-3">
-                                <p class="card-title fw-bold fs-6">Аренда автомобилей</p>
-                                <p class="card-text fs-6">Арендуйте авто для вашего путешествия у лучших компаний по прокату.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Четвертая карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-1 shadow-sm">
-                            <div class="card-body text-start">
-                                <img src="../assets/icons/case.svg" alt="Иконка путёвок" style="width: 24px; height: 24px;" class="mb-3">
-                                <p class="card-title fw-bold fs-6">Путевки на отдых</p>
-                                <p class="card-text fs-6">Экономьте время и деньги, бронируя перелет и отель вместе.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-5">
-            <div class="container text-start">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <!-- Первая карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-0">
-                            <img src="../assets/images/service-images/Cambodia-Kampot.jpg" class="card-img-top rounded-3" alt="Кампот, Камбоджа">
-                            <div class="card-body">
-                                <p class="card-title"><b>Посетите Кампот, Камбоджа</b></p>
-                                <p class="card-price"><b>500.000р/2 недели</b></p>
-                                <p class="card-text">Кампот является базой для посещения Слоновьих гор и Национального парка Бокор. Вокруг города много водопадов.</p>
-                            </div>
-                        </div>
-                    </div>
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <header class="text-black p-3 border-bottom" style="height: 65px; width: 100%;">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+                <!-- Логотип слева -->
+                <h1 class="h4 d-flex align-items-center m-0">
+                    <img src="../assets/logo.svg" alt="logo" style="height: 16px; width: 16px; margin-right: 8px;">
+                    Глобус
+                </h1>
         
-                    <!-- Вторая карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-0">
-                            <img src="../assets/images/service-images/Cuba-Havana.jpg" class="card-img-top rounded-3" alt="Гавана, Куба">
-                            <div class="card-body">
-                                <p class="card-title"><b>Насладитесь г.Гавана на Кубе</b></p>
-                                <p class="card-price"><b>250.000р/2 недели</b></p>
-                                <p class="card-text">Куба привлекает путешественников своими богатыми природными рекреационными ресурсами — разнообразием ландшафта, земных и водных экосистем.</p>
-                            </div>
+                <!-- Контейнер справа для навигации и аватара -->
+                <div class="d-flex align-items-center gap-3">
+                    <nav class="d-flex gap-3">
+                        <a href="#about" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">О нас</a>
+                        <a href="#contacts" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Контакты</a>
+                        <a href="#travels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Путешествия</a>
+                        <a href="#flights" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Полёты</a>
+                        <a href="#hotels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Отели</a>
+                    </nav>
+                    
+                    <!-- Аватар пользователя -->
+                    <img src="../assets/images/example-avatars/avatar-man1.png" class="rounded-circle" style="width: 40px; height: 40px; margin-left: 55px;" alt="Avatar" />
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow-1" style="width: 928px; margin-left: auto; margin-right: auto;">
+            <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 40px" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active image">
+                        <img src="../assets/images/carousel-images/carousel-image1.jpg" class="d-block w-100" alt="" style="border-radius: 12px;">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p style="font-size: 48px;"><b>Приветствуем вас в Глобус</b></p>
+                            <p style="font-size: 16px;">Мы - туристическая компания, которая поможет вам спланировать и забронировать ваше следующее путешествие. Путешествуете ли вы по делам или для удовольствия, мы позаботимся о вас.</p>
                         </div>
                     </div>
-        
-                    <!-- Третья карточка -->
-                    <div class="col">
-                        <div class="card h-100 border-0">
-                            <img src="../assets/images/service-images/Mexico-Mexico.jpg" class="card-img-top rounded-3" alt="Мехико, Мексика">
-                            <div class="card-body">
-                                <p class="card-title"><b>Изучите г.Мехико в Мексике</b></p>
-                                <p class="card-price"><b>50.000р/1 неделя</b></p>
-                                <p class="card-text">Столица страны — город Мехико — служит отправной точкой для посещения древнего индейского города Теотиуакан, известного своими культовыми сооружениями — пирамидой Солнца и пирамидой Луны.</p>
-                            </div>
+
+                    <div class='carousel-item image'>
+                        <img src='../assets/images/carousel-images/carousel-image2.png' class='d-block w-100' alt='' style='border-radius: 12px;'>
+                        <div class='carousel-caption d-none d-md-block'>
+                            <p style='font-size: 48px;'><b>Откройте мир с нами</b></p>
+                            <p style='font-size: 16px;'>Исследуйте новые горизонты! Мы подберем для вас уникальные направления и создадим путешествие, которое идеально подойдёт именно вам.</p>
+                        </div>
+                    </div>
+
+                    <div class='carousel-item image'>
+                        <img src='../assets/images/carousel-images/carousel-image3.png' class='d-block w-100' alt='' style='border-radius: 12px;'>
+                        <div class='carousel-caption d-none d-md-block'>
+                            <p style='font-size: 48px;'><b>Мы всегда рядом</b></p>
+                            <p style='font-size: 16px;'>Наша команда обеспечит поддержку на каждом этапе вашего путешествия, от планирования до возвращения домой. Надёжно, удобно и безопасно.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <section class="py-5">
+                <div class="container text-start">
+                    <h2 class="mb-4">Что вы ищете?</h2>
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <!-- Первая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/airplane.svg" alt="Иконка полётов" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Полёты</p>
+                                    <p class="card-text fs-6" >Бронируйте авиабилеты в любую точку мира по выгодным ценам.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Вторая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/house.svg" alt="Иконка отелей" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Отели</p>
+                                    <p class="card-text fs-6">Найдите идеальное место для проживания во время вашей поездки.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Третья карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/car.svg" alt="Иконка автомобилей" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Аренда автомобилей</p>
+                                    <p class="card-text fs-6">Арендуйте авто для вашего путешествия у лучших компаний по прокату.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Четвертая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-1 shadow-sm">
+                                <div class="card-body text-start">
+                                    <img src="../assets/icons/case.svg" alt="Иконка путёвок" style="width: 24px; height: 24px;" class="mb-3">
+                                    <p class="card-title fw-bold fs-6">Путевки на отдых</p>
+                                    <p class="card-text fs-6">Экономьте время и деньги, бронируя перелет и отель вместе.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5" style="font-size: 24px;">Консультация по путёвке</h2>
-                <form>
-                    <div class="row align-items-start">
-                        <!-- Первый столбик -->
+            <section class="py-5">
+                <div class="container text-start">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Первая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="../assets/images/service-images/Cambodia-Kampot.jpg" class="card-img-top rounded-3" alt="Кампот, Камбоджа">
+                                <div class="card-body">
+                                    <p class="card-title"><b>Посетите Кампот, Камбоджа</b></p>
+                                    <p class="card-price"><b>500.000р/2 недели</b></p>
+                                    <p class="card-text">Кампот является базой для посещения Слоновьих гор и Национального парка Бокор. Вокруг города много водопадов.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Вторая карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="../assets/images/service-images/Cuba-Havana.jpg" class="card-img-top rounded-3" alt="Гавана, Куба">
+                                <div class="card-body">
+                                    <p class="card-title"><b>Насладитесь г.Гавана на Кубе</b></p>
+                                    <p class="card-price"><b>250.000р/2 недели</b></p>
+                                    <p class="card-text">Куба привлекает путешественников своими богатыми природными рекреационными ресурсами — разнообразием ландшафта, земных и водных экосистем.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Третья карточка -->
+                        <div class="col">
+                            <div class="card h-100 border-0">
+                                <img src="../assets/images/service-images/Mexico-Mexico.jpg" class="card-img-top rounded-3" alt="Мехико, Мексика">
+                                <div class="card-body">
+                                    <p class="card-title"><b>Изучите г.Мехико в Мексике</b></p>
+                                    <p class="card-price"><b>50.000р/1 неделя</b></p>
+                                    <p class="card-text">Столица страны — город Мехико — служит отправной точкой для посещения древнего индейского города Теотиуакан, известного своими культовыми сооружениями — пирамидой Солнца и пирамидой Луны.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5" style="font-size: 24px;">Консультация по путёвке</h2>
+                    <form>
+                        <div class="row align-items-start">
+                            <!-- Первый столбик -->
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <h5>Выберите услугу</h5>
+                                    <select id="serviceSelect" class="form-select" required>
+                                        <option value="" disabled selected>Выберите из списка</option>
+                                        <option value="Услуга 1">Услуга 1</option>
+                                        <option value="Услуга 2">Услуга 2</option>
+                                        <option value="Услуга 3">Услуга 3</option>
+                                        <option value="Услуга 4">Услуга 4</option>
+                                        <option value="Услуга 5">Услуга 5</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5>Введите электронную почту</h5>
+                                    <input type="email" id="emailInput" class="form-control" placeholder="example@mail.com" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <h5>Введите номер телефона</h5>
+                                    <input 
+                                        type="tel" 
+                                        id="phoneInput" 
+                                        class="form-control" 
+                                        placeholder="+7 (___) ___-__-__" 
+                                        required 
+                                        pattern="^\+?[0-9\s\-\(\)]{10,15}$" 
+                                        title="Введите корректный номер телефона (например, +7 123 456-78-90)">
+                                </div>
+                            </div>
+            
+                            <!-- Второй столбик -->
+                            <div class="col-md-6 d-flex flex-column justify-content-between">
+                                <div class="mb-3 flex-grow-1">
+                                    <h5>Ваш вопрос или пожелание</h5>
+                                    <textarea id="questionInput" class="form-control" rows="4" placeholder="Введите текст..." style="height: 150px;" required></textarea>
+                                </div>
+                                
+                                <!-- Кнопка "Записаться" выровнена на уровне с полем ввода номера телефона -->
+                                <div class="mt-3 align-self-end">
+                                    <button type="submit" class="btn btn-dark px-5">Записаться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <h2 class="text-center mb-5" style="font-size: 24px;">Отзывы наших клиентов</h2>
+                <div id="testimonialCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                    <!-- Кастомная стрелка "prev" -->
+                    <button class="carousel-control-prev position-absolute top-0 start-0 mt-3 ms-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <img src="../assets/icons/arrowLeft.svg" alt="Предыдущий" width="43.75" height="28.13">
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    
+                    <!-- Кастомная стрелка "next" -->
+                    <button class="carousel-control-next position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <img src="../assets/icons/arrowRight.svg" alt="Следующий" width="43.75" height="28.13">
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
+                    
+                        <div class="carousel-inner">
+                            <!-- Первый прокрут с тремя карточками -->
+                            <div class="carousel-item active">
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <div class="card p-4 h-100">
+                                            <img src="../assets/images/example-avatars/avatar-man2.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
+                                            <p class="review-text">Всё здорово по цене/качеству! Вежливые и опытные специалисты, отличный ассортимент!</p>
+                                            <p class="fw-bold mb-0">Иван Петров</p>
+                                            <p class="text-muted">12.10.2023, 14:35</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card p-4 h-100">
+                                            <img src="../assets/images/example-avatars/avatar-man3.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
+                                            <p class="review-text">Отличная компания! Быстро и качественно помогли подобрать тур.</p>
+                                            <p class="fw-bold mb-0">Джон Доуев</p>
+                                            <p class="text-muted">14.10.2023, 10:10</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card p-4 h-100">
+                                            <img src="../assets/images/example-avatars/avatar-woman1.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
+                                            <p class="review-text">Супер сервис! Всё чётко, организованно и по доступной цене.</p>
+                                            <p class="fw-bold mb-0">Мария Иванова</p>
+                                            <p class="text-muted">16.10.2023, 16:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                                <!-- Второй прокрут с тремя карточками -->
+                                <div class="carousel-item">
+                                    <div class="row text-center">
+                                        <div class="col-md-4">
+                                            <div class="card p-4 h-100">
+                                                <img src="../assets/images/example-avatars/avatar-man4.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
+                                                <p class="review-text">Лучший выбор для путешествий. Доступно и интересно, рекомендую!</p>
+                                                <p class="fw-bold mb-0">Алексей Козлов</p>
+                                                <p class="text-muted">18.10.2023, 09:20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card p-4 h-100">
+                                                <img src="../assets/images/example-avatars/avatar-woman2.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
+                                                <p class="review-text">Благодарна за профессиональный подход и внимательное отношение!</p>
+                                                <p class="fw-bold mb-0">Ольга Соколова</p>
+                                                <p class="text-muted">20.10.2023, 11:50</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card p-4 h-100">
+                                                <img src="../assets/images/example-avatars/avatar-woman3.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
+                                                <p class="review-text">Прекрасный опыт, всё устроило. Отличные предложения!</p>
+                                                <p class="fw-bold mb-0">Екатерина Лебедева</p>
+                                                <p class="text-muted">22.10.2023, 18:30</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+            
+            <section class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-5" style="font-size: 24px;">Контактная информация</h2>
+                    
+                    <div class="row">
+                        <!-- Первый столбец с контактной информацией, центрированный по вертикали -->
+                        <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+                            <div>
+                                <h5>Номер телефона:</h5>
+                                <p>8 999 (666) 15-15</p>
+            
+                                <h5>Электронная почта:</h5>
+                                <p>globusbest@example.ru</p>
+            
+                                <h5>Мы находимся по адресу:</h5>
+                                <p>xxxx/xx/x</p>
+                            </div>
+                        </div>
+            
+                        <!-- Второй столбец с картой -->
                         <div class="col-md-6">
-                            <div class="mb-4">
-                                <h5>Выберите услугу</h5>
-                                <select id="serviceSelect" class="form-select" required>
-                                    <option value="" disabled selected>Выберите из списка</option>
-                                    <option value="Услуга 1">Услуга 1</option>
-                                    <option value="Услуга 2">Услуга 2</option>
-                                    <option value="Услуга 3">Услуга 3</option>
-                                    <option value="Услуга 4">Услуга 4</option>
-                                    <option value="Услуга 5">Услуга 5</option>
-                                </select>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <h5>Введите электронную почту</h5>
-                                <input type="email" id="emailInput" class="form-control" placeholder="example@mail.com" required>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <h5>Введите номер телефона</h5>
-                                <input 
-                                    type="tel" 
-                                    id="phoneInput" 
-                                    class="form-control" 
-                                    placeholder="+7 (___) ___-__-__" 
-                                    required 
-                                    pattern="^\+?[0-9\s\-\(\)]{10,15}$" 
-                                    title="Введите корректный номер телефона (например, +7 123 456-78-90)">
-                            </div>
-                        </div>
-        
-                        <!-- Второй столбик -->
-                        <div class="col-md-6 d-flex flex-column justify-content-between">
-                            <div class="mb-3 flex-grow-1">
-                                <h5>Ваш вопрос или пожелание</h5>
-                                <textarea id="questionInput" class="form-control" rows="4" placeholder="Введите текст..." style="height: 150px;" required></textarea>
-                            </div>
-                            
-                            <!-- Кнопка "Записаться" выровнена на уровне с полем ввода номера телефона -->
-                            <div class="mt-3 align-self-end">
-                                <button type="submit" class="btn btn-dark px-5">Записаться</button>
-                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6008.445712274994!2d29.958158935894982!3d57.83008706401808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46bf7c8487928423%3A0x8ddd85bb309dd3da!2z0JTQvdC-LCDQn9GB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1730634204001!5m2!1sru!2sru"
+                                width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                </form>
-            </div>
-        </section>
+                </div>
+            </section>
+        </main>
 
-        <section class="py-5">
-            <h2 class="text-center mb-5" style="font-size: 24px;">Отзывы наших клиентов</h2>
-            <div id="testimonialCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
-                <!-- Кастомная стрелка "prev" -->
-                <button class="carousel-control-prev position-absolute top-0 start-0 mt-3 ms-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <img src="../assets/icons/arrowLeft.svg" alt="Предыдущий" width="43.75" height="28.13">
-                    <span class="visually-hidden">Предыдущий</span>
-                </button>
-                
-                <!-- Кастомная стрелка "next" -->
-                <button class="carousel-control-next position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <img src="../assets/icons/arrowRight.svg" alt="Следующий" width="43.75" height="28.13">
-                    <span class="visually-hidden">Следующий</span>
-                </button>
-                
-                    <div class="carousel-inner">
-                        <!-- Первый прокрут с тремя карточками -->
-                        <div class="carousel-item active">
-                            <div class="row text-center">
-                                <div class="col-md-4">
-                                    <div class="card p-4 h-100">
-                                        <img src="../assets/images/example-avatars/avatar-man2.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
-                                        <p class="review-text">Всё здорово по цене/качеству! Вежливые и опытные специалисты, отличный ассортимент!</p>
-                                        <p class="fw-bold mb-0">Иван Петров</p>
-                                        <p class="text-muted">12.10.2023, 14:35</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card p-4 h-100">
-                                        <img src="../assets/images/example-avatars/avatar-man3.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
-                                        <p class="review-text">Отличная компания! Быстро и качественно помогли подобрать тур.</p>
-                                        <p class="fw-bold mb-0">Джон Доуев</p>
-                                        <p class="text-muted">14.10.2023, 10:10</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card p-4 h-100">
-                                        <img src="../assets/images/example-avatars/avatar-woman1.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
-                                        <p class="review-text">Супер сервис! Всё чётко, организованно и по доступной цене.</p>
-                                        <p class="fw-bold mb-0">Мария Иванова</p>
-                                        <p class="text-muted">16.10.2023, 16:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Второй прокрут с тремя карточками -->
-                        <div class="carousel-item">
-                            <div class="row text-center">
-                                <div class="col-md-4">
-                                    <div class="card p-4 h-100">
-                                        <img src="../assets/images/example-avatars/avatar-man4.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
-                                        <p class="review-text">Лучший выбор для путешествий. Доступно и интересно, рекомендую!</p>
-                                        <p class="fw-bold mb-0">Алексей Козлов</p>
-                                        <p class="text-muted">18.10.2023, 09:20</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card p-4 h-100">
-                                        <img src="../assets/images/example-avatars/avatar-woman2.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
-                                        <p class="review-text">Благодарна за профессиональный подход и внимательное отношение!</p>
-                                        <p class="fw-bold mb-0">Ольга Соколова</p>
-                                        <p class="text-muted">20.10.2023, 11:50</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card p-4 h-100">
-                                        <img src="../assets/images/example-avatars/avatar-woman3.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
-                                        <p class="review-text">Прекрасный опыт, всё устроило. Отличные предложения!</p>
-                                        <p class="fw-bold mb-0">Екатерина Лебедева</p>
-                                        <p class="text-muted">22.10.2023, 18:30</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+        <footer class="py-5 border-top" style="height: 197px;">
+            <div class="container d-flex flex-column justify-content-between h-100">
+                <!-- Первая строка: ссылки, распределенные по ширине -->
+                <div class="d-flex justify-content-between text-center">
+                    <a href="#about" class="footer-link">О нас</a>
+                    <a href="#contact" class="footer-link">Связаться с нами</a>
+                    <a href="#privacy" class="footer-link">Политика конфиденциальности</a>
+                    <a href="#terms" class="footer-link">Условия оказания услуг</a>
+                </div>
+         
+                <!-- Вторая строка: социальные ссылки в виде иконок -->
+                <div class="my-3 text-center">
+                    <a href="#" class="footer-link-icon mx-2">
+                        <img src="../assets/icons/vk.svg" alt="VK" width="24" height="24">
+                    </a>
+                    <a href="#" class="footer-link-icon mx-2">
+                        <img src="../assets/icons/telegram.svg" alt="Telegram" width="24" height="24">
+                    </a>
+                    <a href="#" class="footer-link-icon mx-2">
+                        <img src="../assets/icons/pinterest.svg" alt="Pinterest" width="24" height="24">
+                    </a>
+                </div> 
+                <!-- Третья строка: авторские права -->
+                <div class="text-center">
+                    <p class="mb-0">© 2024 Глобус</p>
                 </div>
             </div>
-        </section>
+        </footer>
         
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5" style="font-size: 24px;">Контактная информация</h2>
-                
-                <div class="row">
-                    <!-- Первый столбец с контактной информацией, центрированный по вертикали -->
-                    <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
-                        <div>
-                            <h5>Номер телефона:</h5>
-                            <p>8 999 (666) 15-15</p>
-        
-                            <h5>Электронная почта:</h5>
-                            <p>globusbest@example.ru</p>
-        
-                            <h5>Мы находимся по адресу:</h5>
-                            <p>xxxx/xx/x</p>
-                        </div>
-                    </div>
-        
-                    <!-- Второй столбец с картой -->
-                    <div class="col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6008.445712274994!2d29.958158935894982!3d57.83008706401808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46bf7c8487928423%3A0x8ddd85bb309dd3da!2z0JTQvdC-LCDQn9GB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1730634204001!5m2!1sru!2sru"
-                            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-    </main>
+    </div>
+
 </body>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 </html>

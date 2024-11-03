@@ -171,3 +171,20 @@ textarea.form-control {
     right: 0;
 }
 
+/* Стили для ссылок в footer */
+.footer-link {
+    color: inherit; /* Убираем синий цвет и используем текущий цвет текста */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Добавляем эффект при наведении */
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Убираем синие штрихи под иконками социальных сетей */
+.footer-link-icon {
+    text-decoration: none; /* Убираем подчёркивание */
+    color: inherit; /* Наследуем цвет текста, чтобы убрать синий */
+}
