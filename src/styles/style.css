@@ -48,3 +48,20 @@
     color: var(--description-text);
 }
 
+/* Дополнительные стили для заголовков формы */
+h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Отступ для кнопки */
+.text-md-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Задаем фиксированную высоту для текстового поля */
+textarea.form-control {
+    height: 120px; /* Примерная высота, можно отрегулировать */
+}
