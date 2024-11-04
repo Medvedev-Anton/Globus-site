@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Golos Text';
+    src: url('../assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Для вариативного шрифта указываем диапазон толщин */
+    font-style: normal;
+}
+
+body {
+    font-family: 'Golos Text', sans-serif;
+}
+
 .carousel-indicators > button {
     border-radius: 50%;
     width: 8px !important;
