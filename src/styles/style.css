@@ -1,3 +1,4 @@
+/* === Шрифты === */
 @font-face {
     font-family: 'Golos Text';
     src: url('../assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf') format('truetype');
@@ -8,7 +9,19 @@
 body {
     font-family: 'Golos Text', sans-serif;
 }
-/* Базовый стиль для кнопок в header */
+
+/* === Стили header === */
+header {
+    height: 65px;
+    width: 100%;
+}
+
+.logo-img {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+}
+
 .nav-btn {
     background-color: transparent; /* Прозрачный фон */
     border: none; /* Убираем рамку */
@@ -27,30 +40,41 @@ body {
     transform: scale(1.1); /* Небольшое увеличение при наведении */
 }
 
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    margin-left: 55px;
+}
+
+/* === Стили карусели преимущес === */
 .carousel-indicators > button {
     border-radius: 50%;
     width: 8px !important;
     height: 8px !important;
 }
+
 .carousel-inner img {
     width: 100%; /* Ширина 100% от родительского контейнера */
     height: 480px; /* Фиксированная высота */
-    object-fit: cover; /* Заполнение контейнера без искажения пропорций */
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон под текстом */
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 .carousel-item {
-    position: relative; /* Устанавливаем позицию для родительского элемента */
+    position: relative;
 }
 
 .image {
-	background: #000;
+    background: #000;
     border-radius: 12px;
 }
+
 .image img {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
-/* Уменьшаем отступы внутри карточки */
+/* === Карточки (Card) === */
+/* Общие стили карточек */
 .card-body {
     padding: 0.5rem 1rem;
 }
@@ -58,59 +82,54 @@ body {
 .card-title {
     font-size: 1.1rem;
     margin: 0.5rem 0 0.25rem 0;
-    white-space: nowrap; /* Не переносить текст */
-    overflow: hidden; /* Скрыть выходящий за границу текст */
-    text-overflow: ellipsis; /* Добавить многоточие */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Цена */
+/* Цена в карточке */
 .card-price {
     font-size: 1rem;
     margin: 0.25rem 0;
     color: var(--highlight-color);
-    /* Убираем font-weight для использования тега <b> в HTML */
 }
 
-/* Текст описания */
+/* Текст описания в карточке */
 .card-text {
     margin: 0.5rem 0 0;
     color: var(--description-text);
 }
 
-/* Анимация подъема для карточек с классом card-lift */
+/* Анимация при наведении */
 .card-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Эффект при наведении */
 .card-lift:hover {
-    transform: translateY(-10px); /* Поднимаем карточку вверх на 10px */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Увеличиваем тень для эффекта подъема */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Дополнительные стили для заголовков формы */
+/* === Формы === */
 h5 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
-/* Отступ для кнопки */
 .text-md-end {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-/* Задаем фиксированную высоту для текстового поля */
 textarea.form-control {
-    height: 120px; /* Примерная высота, можно отрегулировать */
+    height: 120px;
 }
 
-/* Карточки отзывов с фиксированной высотой */
+/* === Карусель отзывов === */
 #testimonialCarousel .card {
     width: 100%;
-    height: 340px; /* Увеличим высоту для большего пространства текста */
+    height: 340px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -121,56 +140,50 @@ textarea.form-control {
     padding: 20px;
 }
 
-/* Аватар */
 #testimonialCarousel .card img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
 
-/* Увеличенная область текста отзыва */
 #testimonialCarousel .review-text {
-    height: 80px; /* Увеличим высоту для видимости текста */
-    font-size: 1rem; /* Увеличим размер текста */
-    color: #333; /* Более темный цвет для лучшей читаемости */
+    height: 80px;
+    font-size: 1rem;
+    color: #333;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-/* Имя */
 #testimonialCarousel .card .fw-bold {
     height: 24px;
     margin-top: 1rem;
     font-size: 1rem;
 }
 
-/* Дата */
 #testimonialCarousel .card .text-muted {
     height: 20px;
     font-size: 0.875rem;
     color: #6c757d;
 }
 
-/* Позиционируем стрелки управления в верхних углах */
+/* === Стрелки навигации для карусели === */
 .carousel-control-prev,
 .carousel-control-next {
-    top: 10px; /* Устанавливаем стрелки в верхней части */
-    width: 30px; /* Делаем стрелки немного меньше */
+    top: 10px;
+    width: 30px;
     height: 30px;
 }
 
-/* Убираем стандартный фон Bootstrap */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: none; /* Убираем стандартное изображение */
+    background-image: none;
     width: 20px;
     height: 20px;
     position: relative;
 }
 
-/* Стиль стрелки для кнопки "prev" */
 .carousel-control-prev-icon::before,
 .carousel-control-prev-icon::after {
     content: '';
@@ -180,7 +193,6 @@ textarea.form-control {
     height: 2px;
 }
 
-/* Верхняя и нижняя линии для стрелки "prev" */
 .carousel-control-prev-icon::before {
     transform: rotate(45deg);
     top: 50%;
@@ -195,7 +207,6 @@ textarea.form-control {
     transform-origin: left;
 }
 
-/* Стиль стрелки для кнопки "next" */
 .carousel-control-next-icon::before,
 .carousel-control-next-icon::after {
     content: '';
@@ -205,27 +216,24 @@ textarea.form-control {
     height: 2px;
 }
 
-/* Верхняя и нижняя линии для стрелки "next" */
 .carousel-control-next-icon::before {
     transform: rotate(-45deg);
     top: 50%;
     right: 0;
 }
 
-/* Стили для ссылок в footer */
+/* === Стили для footer === */
 .footer-link {
-    color: inherit; /* Убираем синий цвет и используем текущий цвет текста */
+    color: inherit;
     text-decoration: none;
     font-weight: 500;
 }
 
-/* Добавляем эффект при наведении */
 .footer-link:hover {
     text-decoration: underline;
 }
 
-/* Убираем синие штрихи под иконками социальных сетей */
 .footer-link-icon {
-    text-decoration: none; /* Убираем подчёркивание */
-    color: inherit; /* Наследуем цвет текста, чтобы убрать синий */
+    text-decoration: none;
+    color: inherit;
 }
