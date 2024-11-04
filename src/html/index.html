@@ -13,29 +13,24 @@
 </head>
 <body>
     <div class="wrapper d-flex flex-column min-vh-100">
-        <header class="text-black p-3 border-bottom" style="height: 65px; width: 100%;">
+        <header class="text-black p-3 border-bottom">
             <div class="container-fluid d-flex justify-content-between align-items-center px-3">
-                <!-- Логотип слева -->
                 <h1 class="h4 d-flex align-items-center m-0">
                     <img src="../assets/logo.svg" alt="logo" style="height: 16px; width: 16px; margin-right: 8px;">
                     Глобус
                 </h1>
-        
-                <!-- Контейнер справа для навигации и аватара -->
-                <div class="d-flex align-items-center gap-3">
-                    <nav class="d-flex gap-3">
-                        <a href="#about" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">О нас</a>
-                        <a href="#contacts" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Контакты</a>
-                        <a href="#travels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Путешествия</a>
-                        <a href="#flights" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Полёты</a>
-                        <a href="#hotels" class="nav-link" data-bs-toggle="modal" data-bs-target="#question">Отели</a>
-                    </nav>
-                    
-                    <!-- Аватар пользователя -->
-                    <img src="../assets/images/example-avatars/avatar-man1.png" class="rounded-circle" style="width: 40px; height: 40px; margin-left: 55px;" alt="Avatar" />
+                
+                <!-- Кнопки навигации -->
+                <div class="d-flex gap-3">
+                    <button class="nav-btn" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">О нас</button>
+                    <button class="nav-btn" type="button" data-bs-toggle="modal" data-bs-target="#contactsModal">Контакты</button>
+                    <button class="nav-btn" type="button" data-bs-toggle="modal" data-bs-target="#travelsModal">Путешествия</button>
+                    <button class="nav-btn" type="button" data-bs-toggle="modal" data-bs-target="#flightsModal">Полёты</button>
+                    <button class="nav-btn" type="button" data-bs-toggle="modal" data-bs-target="#hotelsModal">Отели</button>
                 </div>
             </div>
         </header>
+        
 
         <main class="flex-grow-1" style="width: 928px; margin-left: auto; margin-right: auto;">
             <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 40px" data-bs-ride="carousel">
@@ -77,7 +72,7 @@
                     <div class="row row-cols-1 row-cols-md-4 g-4">
                         <!-- Первая карточка -->
                         <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
+                            <div class="card h-100 border-1 shadow-sm card-lift">
                                 <div class="card-body text-start">
                                     <img src="../assets/icons/airplane.svg" alt="Иконка полётов" style="width: 24px; height: 24px;" class="mb-3">
                                     <p class="card-title fw-bold fs-6">Полёты</p>
@@ -87,7 +82,7 @@
                         </div>
                         <!-- Вторая карточка -->
                         <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
+                            <div class="card h-100 border-1 shadow-sm card-lift">
                                 <div class="card-body text-start">
                                     <img src="../assets/icons/house.svg" alt="Иконка отелей" style="width: 24px; height: 24px;" class="mb-3">
                                     <p class="card-title fw-bold fs-6">Отели</p>
@@ -97,7 +92,7 @@
                         </div>
                         <!-- Третья карточка -->
                         <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
+                            <div class="card h-100 border-1 shadow-sm card-lift">
                                 <div class="card-body text-start">
                                     <img src="../assets/icons/car.svg" alt="Иконка автомобилей" style="width: 24px; height: 24px;" class="mb-3">
                                     <p class="card-title fw-bold fs-6">Аренда автомобилей</p>
@@ -107,7 +102,7 @@
                         </div>
                         <!-- Четвертая карточка -->
                         <div class="col">
-                            <div class="card h-100 border-1 shadow-sm">
+                            <div class="card h-100 border-1 shadow-sm card-lift">
                                 <div class="card-body text-start">
                                     <img src="../assets/icons/case.svg" alt="Иконка путёвок" style="width: 24px; height: 24px;" class="mb-3">
                                     <p class="card-title fw-bold fs-6">Путевки на отдых</p>
@@ -124,7 +119,7 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <!-- Первая карточка -->
                         <div class="col">
-                            <div class="card h-100 border-0">
+                            <div class="card h-100 border-0 card-lift">
                                 <img src="../assets/images/service-images/Cambodia-Kampot.jpg" class="card-img-top rounded-3" alt="Кампот, Камбоджа">
                                 <div class="card-body">
                                     <p class="card-title"><b>Посетите Кампот, Камбоджа</b></p>
@@ -136,7 +131,7 @@
             
                         <!-- Вторая карточка -->
                         <div class="col">
-                            <div class="card h-100 border-0">
+                            <div class="card h-100 border-0 card-lift">
                                 <img src="../assets/images/service-images/Cuba-Havana.jpg" class="card-img-top rounded-3" alt="Гавана, Куба">
                                 <div class="card-body">
                                     <p class="card-title"><b>Насладитесь г.Гавана на Кубе</b></p>
@@ -148,7 +143,7 @@
             
                         <!-- Третья карточка -->
                         <div class="col">
-                            <div class="card h-100 border-0">
+                            <div class="card h-100 border-0 card-lift">
                                 <img src="../assets/images/service-images/Mexico-Mexico.jpg" class="card-img-top rounded-3" alt="Мехико, Мексика">
                                 <div class="card-body">
                                     <p class="card-title"><b>Изучите г.Мехико в Мексике</b></p>
@@ -217,7 +212,7 @@
 
             <section class="py-5">
                 <h2 class="text-center mb-5" style="font-size: 24px;">Отзывы наших клиентов</h2>
-                <div id="testimonialCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div id="testimonialCarousel" class="carousel slide position-relative" data-bs-ride="carousel" style="width: 928px;">
                     <!-- Кастомная стрелка "prev" -->
                     <button class="carousel-control-prev position-absolute top-0 start-0 mt-3 ms-3" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                         <img src="../assets/icons/arrowLeft.svg" alt="Предыдущий" width="43.75" height="28.13">
@@ -235,7 +230,7 @@
                             <div class="carousel-item active">
                                 <div class="row text-center">
                                     <div class="col-md-4">
-                                        <div class="card p-4 h-100">
+                                        <div class="card p-4 h-100 card-lift">
                                             <img src="../assets/images/example-avatars/avatar-man2.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
                                             <p class="review-text">Всё здорово по цене/качеству! Вежливые и опытные специалисты, отличный ассортимент!</p>
                                             <p class="fw-bold mb-0">Иван Петров</p>
@@ -243,7 +238,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card p-4 h-100">
+                                        <div class="card p-4 h-100 card-lift">
                                             <img src="../assets/images/example-avatars/avatar-man3.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
                                             <p class="review-text">Отличная компания! Быстро и качественно помогли подобрать тур.</p>
                                             <p class="fw-bold mb-0">Джон Доуев</p>
@@ -251,7 +246,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="card p-4 h-100">
+                                        <div class="card p-4 h-100 card-lift">
                                             <img src="../assets/images/example-avatars/avatar-woman1.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
                                             <p class="review-text">Супер сервис! Всё чётко, организованно и по доступной цене.</p>
                                             <p class="fw-bold mb-0">Мария Иванова</p>
@@ -265,7 +260,7 @@
                                 <div class="carousel-item">
                                     <div class="row text-center">
                                         <div class="col-md-4">
-                                            <div class="card p-4 h-100">
+                                            <div class="card p-4 h-100 card-lift">
                                                 <img src="../assets/images/example-avatars/avatar-man4.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
                                                 <p class="review-text">Лучший выбор для путешествий. Доступно и интересно, рекомендую!</p>
                                                 <p class="fw-bold mb-0">Алексей Козлов</p>
@@ -273,7 +268,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card p-4 h-100">
+                                            <div class="card p-4 h-100 card-lift">
                                                 <img src="../assets/images/example-avatars/avatar-woman2.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
                                                 <p class="review-text">Благодарна за профессиональный подход и внимательное отношение!</p>
                                                 <p class="fw-bold mb-0">Ольга Соколова</p>
@@ -281,7 +276,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="card p-4 h-100">
+                                            <div class="card p-4 h-100 card-lift">
                                                 <img src="../assets/images/example-avatars/avatar-woman3.png" class="rounded-circle mx-auto mb-3" alt="Аватар" style="width: 80px; height: 80px;">
                                                 <p class="review-text">Прекрасный опыт, всё устроило. Отличные предложения!</p>
                                                 <p class="fw-bold mb-0">Екатерина Лебедева</p>

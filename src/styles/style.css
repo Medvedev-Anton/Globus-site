@@ -8,6 +8,24 @@
 body {
     font-family: 'Golos Text', sans-serif;
 }
+/* Базовый стиль для кнопок в header */
+.nav-btn {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    color: #000; /* Черный текст */
+    font-size: 1rem; /* Размер шрифта */
+    padding: 5px 10px; /* Отступы для удобства */
+    border-radius: 5px; /* Скругленные углы */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Эффект при наведении на кнопки */
+.nav-btn:hover {
+    background-color: #000; /* Черный фон при наведении */
+    color: #fff; /* Белый текст при наведении */
+    transform: scale(1.1); /* Небольшое увеличение при наведении */
+}
 
 .carousel-indicators > button {
     border-radius: 50%;
@@ -58,6 +76,18 @@ body {
     margin: 0.5rem 0 0;
     color: var(--description-text);
 }
+
+/* Анимация подъема для карточек с классом card-lift */
+.card-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении */
+.card-lift:hover {
+    transform: translateY(-10px); /* Поднимаем карточку вверх на 10px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Увеличиваем тень для эффекта подъема */
+}
+
 
 /* Дополнительные стили для заголовков формы */
 h5 {
