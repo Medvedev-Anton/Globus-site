@@ -8,12 +8,20 @@
 
 body {
     font-family: 'Golos Text', sans-serif;
+    padding-top: 65px; /* Отступ сверху, равный высоте header */
 }
 
 /* === Стили header === */
 header {
-    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 65px; /* Высота header */
+    background-color: white; /* Цвет фона, можно изменить */
+    z-index: 1000; /* Убедитесь, что header будет поверх других элементов */
+    border-bottom: 2px solid #ccc; /* Линия внизу header, можно изменить */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта */
 }
 
 .logo-img {
