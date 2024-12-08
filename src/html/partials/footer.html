@@ -1,9 +1,17 @@
+<script>
+    $(document).ready(function() {
+        // Загружаем модальные окна
+        $('#private-modal-container').load('./partials/privacyModal.html');
+        $('#terms-modal-container').load('./partials/termsModal.html');
+    });
+</script>
+
 <footer class="py-5 border-top">
     <div class="container d-flex flex-column justify-content-between h-100">
         <!-- Первая строка: ссылки, распределенные по ширине -->
         <div class="d-flex justify-content-between text-center">
-            <a href="#privacy" class="footer-link">Политика конфиденциальности</a>
-            <a href="#terms" class="footer-link">Условия оказания услуг</a>
+            <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#privacyModal">Политика конфиденциальности</a>
+            <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#termsModal">Условия оказания услуг</a>
         </div>
      
         <!-- Вторая строка: социальные ссылки в виде иконок -->
@@ -18,9 +26,14 @@
                 <img src="../assets/icons/pinterest.svg" alt="Pinterest" class="icon-size">
             </a>
         </div> 
+
         <!-- Третья строка: авторские права -->
         <div class="text-center">
             <p class="mb-0">© 2024 Глобус</p>
         </div>
     </div>
 </footer>
+
+<!-- Контейнер для модальных окон -->
+<div id="private-modal-container"></div>
+<div id="terms-modal-container"></div>
