@@ -158,11 +158,13 @@ h5 {
 .text-md-end {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center;;
 }
 
 textarea.form-control {
     height: 120px;
+    resize: none
+    
 }
 
 #questionInput {
@@ -319,7 +321,7 @@ footer {
 .btn-up {
     bottom: 0;
     right: 0;
-    margin-bottom: 16px; /* Расстояние от низа */
+    margin-bottom: 72px; /* Расстояние от низа */
     margin-right: 16px;  /* Расстояние от правого края */
     background-color: white;
     border-color: black; /* Черная рамка */
@@ -328,7 +330,7 @@ footer {
 .btn-whatsapp {
     bottom: 0;
     right: 0;
-    margin-bottom: 72px; /* Расстояние от низа, чтобы кнопка "Вверх" не перекрывала */
+    margin-bottom: 16px; /* Расстояние от низа, чтобы кнопка "Вверх" не перекрывала */
     margin-right: 16px;  /* Расстояние от правого края */
     background-color: green;
     border-color: black; /* Черная рамка */
@@ -419,4 +421,11 @@ footer {
         height: 300px;
     }
 
+}
+@media (max-width: 480px) {
+    /* Основные стили */
+    main {
+        width: 100%;
+        padding: 0 15px;
+    }
 }

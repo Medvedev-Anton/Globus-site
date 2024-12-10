@@ -50,29 +50,41 @@
     </button>
 
     <!-- Кнопка "Заказать звонок" с иконкой WhatsApp -->
-    <!-- Пример номера -->
     <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success fix-button btn-whatsapp" title="Написать в WhatsApp">
         <img src="../assets/icons/whatsApp.svg" alt="WhatsApp" class="icon-size">
     </a>
-
-</body>
     <!-- Подключение jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Подключение маски ввода jQuery -->
+    <script src="../vendor/jquery/jquery.mask.min.js"></script>
+
     <!-- Подключение Bootstrap -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- Подключение частей -->
     <script>
-            // Загружаем элементы из внешних файлов
-            $(document).ready(function() {
-                $('#header').load('./partials/header.html');
-                $('#footer').load('./partials/footer.html');
-                $('#carouselBenefits').load('./partials/carouselBenefits.html');
-                $('#serviceCards').load('./partials/serviceCards.html');
-                $('#travelCards').load('./partials/travelCards.html');
-                $('#travelAdvice').load('./partials/travelAdvice.html');
-                $('#carouselReviewsDesktop').load('./partials/carouselReviewsDesktop.html');
-                $('#carouselReviewsMobile').load('./partials/carouselReviewsMobile.html');
-                $('#contactInfo').load('./partials/contactInfo.html');
+        // Загружаем элементы из внешних файлов
+        $(document).ready(function() {
+            $('#header').load('./partials/header.html');
+            $('#footer').load('./partials/footer.html');
+            $('#carouselBenefits').load('./partials/carouselBenefits.html');
+            $('#serviceCards').load('./partials/serviceCards.html');
+            $('#travelCards').load('./partials/travelCards.html');
+            $('#travelAdvice').load('./partials/travelAdvice.html', function() {
+                // Применение маски ввода к полю телефона после загрузки формы
+                applyMask();
             });
+            $('#carouselReviewsDesktop').load('./partials/carouselReviewsDesktop.html');
+            $('#carouselReviewsMobile').load('./partials/carouselReviewsMobile.html');
+            $('#contactInfo').load('./partials/contactInfo.html');
+            
+            function applyMask() {
+                // Применение маски ввода к полю телефона
+                $('#phoneInput').mask("+7 (999) 999-99-99");
+            }
+        });
     </script>
+</body>
+
 </html>
