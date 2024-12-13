@@ -1,55 +1,65 @@
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5 font-size-24" id="сonsultation">Консультация по путёвке</h2>
-        <form>
-            <div class="row align-items-start">
-                <!-- Первый столбик -->
-                <div class="col-md-6">
-                    <div class="mb-4">
-                        <h5>Выберите услугу</h5>
-                        <select id="serviceSelect" class="form-select" required>
-                            <option value="" disabled selected>Выберите из списка</option>
-                            <option value="Услуга 1">Услуга 1</option>
-                            <option value="Услуга 2">Услуга 2</option>
-                            <option value="Услуга 3">Услуга 3</option>
-                            <option value="Услуга 4">Услуга 4</option>
-                            <option value="Услуга 5">Услуга 5</option>
-                        </select>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма консультации по путёвке</title>
+</head>
+<body>
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 font-size-24" id="сonsultation">Консультация по путёвке</h2>
+            <form>
+                <div class="row align-items-start">
+                    <!-- Первый столбик -->
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h5>Выберите услугу</h5>
+                            <select id="serviceSelect" class="form-select" required>
+                                <option value="" disabled selected>Выберите из списка</option>
+                                <option value="Услуга 1">Услуга 1</option>
+                                <option value="Услуга 2">Услуга 2</option>
+                                <option value="Услуга 3">Услуга 3</option>
+                                <option value="Услуга 4">Услуга 4</option>
+                                <option value="Услуга 5">Услуга 5</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5>Введите электронную почту</h5>
+                            <input type="email" id="emailInput" class="form-control" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5>Введите номер телефона</h5>
+                            <input 
+                                type="tel" 
+                                id="phoneInput" 
+                                name="phoneInput"
+                                class="form-control" 
+                                placeholder="+7 (___) ___-__-__" 
+                                required 
+                                pattern="^\+?[0-9\s\-\(\)]{10,15}$" 
+                                title="Введите корректный номер телефона (например, +7 123 456-78-90)"
+                            >
+                        </div>
                     </div>
 
-                    <div class="mb-4">
-                        <h5>Введите электронную почту</h5>
-                        <input type="email" id="emailInput" class="form-control" placeholder="example@mail.com" required>
-                    </div>
+                    <!-- Второй столбик -->
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <div class="mb-3 flex-grow-1">
+                            <h5>Ваш вопрос или пожелание</h5>
+                            <textarea id="questionInput" class="form-control" rows="4" placeholder="Введите текст..." required></textarea>
+                        </div>
 
-                    <div class="mb-4">
-                        <h5>Введите номер телефона</h5>
-                        <input 
-                            type="tel" 
-                            id="phoneInput" 
-                            name="phoneInput"
-                            class="form-control" 
-                            placeholder="+7 (___) ___-__-__" 
-                            required 
-                            pattern="^\+?[0-9\s\-\(\)]{10,15}$" 
-                            title="Введите корректный номер телефона (например, +7 123 456-78-90)"
-                        >
+                        <!-- Кнопка "Записаться" -->
+                        <div class="mt-3 align-self-end">
+                            <button type="submit" class="btn btn-dark px-5">Записаться</button>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Второй столбик -->
-                <div class="col-md-6 d-flex flex-column justify-content-between">
-                    <div class="mb-3 flex-grow-1">
-                        <h5>Ваш вопрос или пожелание</h5>
-                        <textarea id="questionInput" class="form-control" rows="4" placeholder="Введите текст..." required></textarea>
-                    </div>
-
-                    <!-- Кнопка "Записаться" -->
-                    <div class="mt-3 align-self-end">
-                        <button type="submit" class="btn btn-dark px-5">Записаться</button>
-                    </div>
-                </div>
-            </div> 
-        </form>
-    </div>
-</section>
+                </div> 
+            </form>
+        </div>
+    </section>
+</body>
+</html>
