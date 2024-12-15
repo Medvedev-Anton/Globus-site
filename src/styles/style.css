@@ -17,11 +17,11 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 65px; /* Высота header */
-    background-color: white; /* Цвет фона, можно изменить */
-    z-index: 1000; /* Убедитесь, что header будет поверх других элементов */
-    border-bottom: 2px solid #ccc; /* Линия внизу header, можно изменить */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта */
+    height: 65px;
+    background-color: white;
+    z-index: 1000;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo-img {
@@ -156,7 +156,7 @@ h5 {
 .text-md-end {
     display: flex;
     justify-content: flex-end;
-    align-items: center;;
+    align-items: center;
 }
 
 textarea.form-control {
@@ -419,11 +419,4 @@ footer {
         height: 300px;
     }
 
-}
-@media (max-width: 480px) {
-    /* Основные стили */
-    main {
-        width: 100%;
-        padding: 0 15px;
-    }
 }

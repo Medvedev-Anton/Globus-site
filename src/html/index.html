@@ -10,38 +10,19 @@
 </head>
 
 <body>
-    <!-- Шапка сайта -->
     <div id="header"></div>
-
     <main class="flex-grow-1" id="advantages">
-        <!-- Карусель преимуществ сервиса -->
         <div id="carouselBenefits"></div>
-
-        <!-- Карточки услуг -->
         <div id="serviceCards"></div>
-        
-        <!-- Карточки популярных путёвок -->
         <div id="travelCards"></div>
-
-        <!-- Форма консультации по путёвке -->
         <div id="travelAdvice"></div>
-
-        <!-- Карусель отзывов -->
         <section class="py-5">
             <h2 class="text-center mb-5 font-size-24" id="reviews">Отзывы наших клиентов</h2>
-            
-            <!-- Карусель для ПК-версии (3 карточки за пролистывание) -->
             <div id="carouselReviewsDesktop"></div>
-        
-            <!-- Карусель для мобильной версии (1 карточка за пролистывание) -->
             <div id="carouselReviewsMobile"></div>
         </section>
-        
-        <!-- Контактная информация -->
         <div id="contactInfo"></div>
     </main>
-
-    <!-- Подвал сайта -->
     <div id="footer"></div>
 
     <!-- Кнопка "Вверх" с иконкой -->
@@ -49,20 +30,15 @@
         <img src="../assets/icons/arrowUp.svg" alt="Вверх" class="icon-size">
     </button>
 
-    <!-- Кнопка "Заказать звонок" с иконкой WhatsApp -->
+    <!-- Кнопка "Заказать звонок" -->
     <a href="https://wa.me/1234567890" target="_blank" class="btn btn-success fix-button btn-whatsapp" title="Написать в WhatsApp">
         <img src="../assets/icons/whatsApp.svg" alt="WhatsApp" class="icon-size">
     </a>
-    <!-- Подключение jQuery -->
+
     <script src="../vendor/jquery/jquery.min.js"></script>
-
-    <!-- Подключение маски ввода jQuery -->
     <script src="../vendor/jquery/jquery.mask.min.js"></script>
-
-    <!-- Подключение Bootstrap -->
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Подключение частей -->
     <script>
         // Загружаем элементы из внешних файлов
         $(document).ready(function() {
@@ -86,5 +62,4 @@
         });
     </script>
 </body>
-
 </html>
